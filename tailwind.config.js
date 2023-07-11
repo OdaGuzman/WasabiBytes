@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         'primary-color': 'var(--primary-color)',
+        'color-white': 'var(--color-white)',
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],

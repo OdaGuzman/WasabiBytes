@@ -45,21 +45,6 @@
 }
 
 
-@layer components{
-
-
-.header__menu li {
-  @apply font-medium text-[color:var(--secondary-color)] text-base uppercase leading-5 cursor-pointer;
-  font-family: var(--plus-jakarta-sans);
-}
-.header__menu li img {
-  @apply w-6 h-6 object-contain;
-}
-.header__menu-mobile {
-  @apply hidden gap-5 relative;
-  }
-}
-
 
 @layer components{
 .hero {

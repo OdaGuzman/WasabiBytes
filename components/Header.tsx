@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
         <div className="absolute w-full z-[-1] inset-0;"></div>
       </div>
 
-      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none">
+      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-[color:var(--secondary-color)] text-base uppercase leading-5 cursor-pointer">
         <li>
           <a href="#menu">Menu</a>
         </li>
