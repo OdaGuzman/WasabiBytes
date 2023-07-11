@@ -12,6 +12,23 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'primary-color': 'var(--primary-color)',
+      },
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'jakarta': ['Plus Jakarta Sans', 'sans-serif'],
+      },
+      fontWeight: {
+        '100': '100',
+        '300': '300',
+        '400': '400',
+        '500': '500',
+        '600': '600',
+      },
+      fontStyle: {
+        'italic': 'italic',
+      },
     },
   },
   plugins: [],

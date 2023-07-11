@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
 @layer components{
 .about-us {
   @apply flex min-h-[720px] overflow-hidden;
@@ -43,24 +47,7 @@
 
 @layer components{
 
-.header__nav {
-  @apply flex overflow-hidden;
-}
-.header__logo {
-  @apply flex-1 flex relative p-5;
-}
-.header__logo-overlay {
-  @apply absolute w-full bg-[color:var(--primary-color)] z-[-1] inset-0;
-}
-.header__logo h4 {
-  @apply font-bold text-2xl uppercase text-white opacity-80 pl-[30px];
-  font-family: var(--playfair-display);
-}
-.header__menu,
-.header__menu-mobile {
-  @apply flex-[1.236] flex items-center justify-end gap-16 p-5;
-  list-style: none;
-}
+
 .header__menu li {
   @apply font-medium text-[color:var(--secondary-color)] text-base uppercase leading-5 cursor-pointer;
   font-family: var(--plus-jakarta-sans);
@@ -149,9 +136,6 @@
 }
 
 }
-
-
-
 
 @layer components{
 .footer {
@@ -378,28 +362,7 @@
 }
 
 @layer components {
-
-/*
-  Based on TailwindCSS recommendations,
-  consider using classes instead of the `@apply` directive
-  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
-*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
-
-/* other css file imports
-@import url("sections/header.css");
-@import url("sections/hero.css");
-@import url("sections/about.css");
-@import url("sections/popular.css");
-@import url("sections/trending.css");
-@import url("sections/subscribe.css");
-@import url("sections/footer.css"); */
-
-/* CSS variables for reusablity across all files (including above imported) */
 :root {
-  --playfair-display: "Playfair Display", serif;
-  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
   --primary-color: #b1454a;
   --secondary-color: #121212;
   --black-200: #020202;
@@ -449,8 +412,6 @@ a {
 
   /* IE and Edge */
   scrollbar-width: none;
-
-  /* Firefox */
 }
 
 /* START: about us media queries */
@@ -620,26 +581,3 @@ a {
 
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */

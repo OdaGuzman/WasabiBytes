@@ -1,41 +1,35 @@
 import React from 'react'
-import menu from '../public/assets/menu.svg'
+import Image from 'next/image'
 
 const Header = () => {
   return (
-    <div className="header">
-      <nav className="header__nav flex overflow-hidden;" >
-        <div className="header__logo">
-          <h4 data-aos="fade-down">WASABI <span>B Y T E S  </span> </h4>
-          <div className="header__logo-overlay"></div>
-        </div>
 
-        <ul className="header__menu" data-aos="fade-down">
-          <li>
-            <a href="#menu">Menu</a>
-          </li>
-          <li>
-            <a href="#food">Food</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#about-us">About Us</a>
-          </li>
-          <li>
-            <img src="assets/search.svg" alt="search" />
-          </li>
-        </ul>
+    <div className="flex overflow-hidden font-jakarta" >
+      <div className="flex-1 flex relative p-5 bg-[color:var(--primary-color)]">
+        <h4 className="font-bold text-2xl uppercase text-white opacity-80">WASABI <span>B Y T E S  </span> </h4>
+        <div className="absolute w-full z-[-1] inset-0;"></div>
+      </div>
 
-        <ul className="header__menu-mobile" data-aos="fade-down">
-          <li>
-            <img src={menu} alt="menu" />
-          </li>
-        </ul>
-      </nav>
-
+      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none">
+        <li>
+          <a href="#menu">Menu</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <Image
+            src="/assets/user-nav.png"
+            alt="User Log In"
+            title="User Log In"
+            width={35}
+            height={60}
+          />
+        </li>
+      </ul>
     </div>
+
+
   )
 }
 
