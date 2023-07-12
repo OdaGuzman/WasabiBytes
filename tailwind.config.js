@@ -13,8 +13,14 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'primary-color': 'var(--primary-color)',
-        'color-white': 'var(--color-white)',
+        'primary-color': '#b1454a',
+        'secondary-color': '#121212',
+        'black-200': '#020202',
+        'black-300': '333333',
+        'black-400': '1f1e31',
+        'black-500': '#555555',
+        'gray-100': '#888888',
+        'creamson': '#fff0de',
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],

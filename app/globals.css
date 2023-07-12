@@ -123,21 +123,8 @@
 }
 
 @layer components{
-.footer {
-  @apply w-full flex-wrap gap-5 overflow-hidden px-10 py-5;
-  background: var(--color-white);
-}
-.footer__logo {
-  @apply text-2xl font-[bold] uppercase text-[color:var(--secondary-color)] cursor-pointer;
-  font-family: var(--playfair-display);
-}
-.footer__logo span {
-  @apply text-[color:var(--primary-color)];
-}
-.footer ul {
-  @apply flex last:gap-8;
-  list-style: none;
-}
+
+
 .footer__social li {
   @apply w-[42px] h-[42px] bg-[color:var(--secondary-color)] rounded-[100%];
 }
@@ -180,7 +167,6 @@
 }
 .popular-foods__btn {
   @apply w-fit font-medium text-lg leading-[23px] text-white cursor-pointer mt-20 mb-0 mx-auto px-[30px] py-5 rounded-[64px] border-[none];
-  font-family: var(--plus-jakarta-sans);
   outline: none;
   background: var(--secondary-color);
 }
@@ -367,6 +353,8 @@ body {
 a {
   @apply no-underline text-inherit;
 }
+
+/* Subscribe */
 .flex-center {
   @apply flex justify-center items-center;
 }
