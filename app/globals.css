@@ -123,8 +123,7 @@
 }
 
 @layer components{
-
-
+/* DO NOT REMOVE YET */
 .footer__social li {
   @apply w-[42px] h-[42px] bg-[color:var(--secondary-color)] rounded-[100%];
 }
@@ -222,38 +221,6 @@
 }
 }
 
-@layer components{
-
-.subscription {
-  @apply bg-[color:var(--primary-color)] bg-[url('../public/assets/subscribe\_bg.png')] bg-center bg-no-repeat bg-contain flex-col overflow-hidden p-16;
-}
-.subscription h2 {
-  @apply text-[88px] font-semibold leading-[123px] text-white text-center;
-  font-family: var(--playfair-display);
-}
-.subscription p {
-  @apply text-lg font-light leading-9 text-[rgba(255,255,255,0.8)] mt-8;
-  font-family: var(--plus-jakarta-sans);
-}
-.subscription__form {
-  @apply min-w-[480px] flex gap-2.5 border mt-10 pl-6 pr-3.5 py-3.5 rounded-[46px] border-solid border-[rgba(255,255,255,0.5)];
-}
-.subscription__form input {
-  @apply flex-1 text-base font-[400px] text-white opacity-50 border-[none];
-  font-family: var(--plus-jakarta-sans);
-  background: transparent;
-  outline: none;
-}
-.subscription__form input::placeholder {
-  @apply text-white opacity-50;
-}
-.subscription__form button {
-  @apply min-w-[180px] text-base font-medium text-white text-center cursor-pointer p-5 rounded-[46px] border-[none];
-  font-family: var(--plus-jakarta-sans);
-  background: var(--black-400);
-  outline: none;
-}
-}
 
 @layer components{
 .trending {
