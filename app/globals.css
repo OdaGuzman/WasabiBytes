@@ -231,41 +231,49 @@
 
 
 @layer components{
-.trending {
+/* .trending {
   @apply relative flex flex-col overflow-hidden;
-}
+} 
+
 .trending__discover {
   @apply absolute z-[1] w-40 h-40 bg-[color:var(--secondary-color)] cursor-pointer flex justify-center items-center rounded-[100%] left-[44%] top-[44%];
 }
+
 .trending__discover p {
   @apply text-lg font-medium uppercase text-white;
   font-family: var(--plus-jakarta-sans);
 }
+
 .trending-sushi,
 .trending-drinks {
   @apply w-full min-h-[640px] flex flex-row;
 }
+
 .trending__content {
   @apply flex-1 flex justify-center flex-col px-16 py-8;
-}
+} 
+
 .trending__list {
   @apply flex-wrap gap-5;
   list-style: none;
 }
 .trending__list li {
   @apply flex-1 flex items-center flex-row gap-3 min-w-[210px];
-}
+} 
+
 .trending__icon {
   @apply w-6 h-6 bg-[color:var(--primary-color)] rounded-[100%];
-}
+} 
+
 .trending__icon img {
   @apply w-6/12 h-3/6 object-contain;
 }
+
 .trending__list p {
   @apply flex-1 text-base font-medium text-[color:var(--secondary-color)];
   font-family: var(--plus-jakarta-sans);
 }
-.trending__image {
+ .trending__image {
   @apply flex-1 relative bg-[color:var(--color-white)] bg-no-repeat bg-contain bg-center px-16 py-8;
 }
 .trending-sushi .trending__image {
@@ -273,38 +281,38 @@
 }
 .trending-drink .trending__image {
   @apply bg-[url("../public/assets/japanese\_drinks.png")];
-}
-.trending__image img {
+} */
+/* .trending__image img {
   @apply w-[254px] h-[260px] object-contain;
-}
+} */
 
 /* Arrows */
-.trending__arrow {
+/* .trending__arrow {
   @apply absolute z-[1];
-}
-.trending__arrow img {
+} */
+/* .trending__arrow img {
   @apply object-contain;
-}
-.trending__arrow-left {
+} */
+/* .trending__arrow-left {
   @apply left-[-2.5px] top-[12%];
-}
-.trending__arrow-left img,
+} */
+/* .trending__arrow-left img,
 .trending__arrow-top img {
   @apply w-auto h-full;
-}
-.trending__arrow-top {
+} */
+/* .trending__arrow-top {
   @apply top-[-10.5px] left-[12%];
-}
-.trending__arrow-bottom {
+} */
+/* .trending__arrow-bottom {
   @apply bottom-[-6.5px] right-[12%];
-}
-.trending__arrow-bottom img,
+} */
+/* .trending__arrow-bottom img,
 .trending__arrow-right img {
   @apply w-full h-auto;
-}
-.trending__arrow-right {
+} */
+/* .trending__arrow-right {
   @apply right-[-2.5px] bottom-[12%];
-}
+} */
 }
 
 @layer components {
