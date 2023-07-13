@@ -124,6 +124,7 @@
 
 @layer components{
 /* DO NOT REMOVE YET */
+
 .footer__social li {
   @apply w-[42px] h-[42px] bg-[color:var(--secondary-color)] rounded-[100%];
 }
@@ -218,6 +219,13 @@
 }
 .popular-foods__card.active-card .popular-foods__card-price {
   @apply text-2xl text-[color:var(--secondary-color)];
+}
+}
+
+@layer components{
+
+.subscription {
+  @apply bg-[color:var(--primary-color)] bg-[url('../public/assets/subscribe\_bg.png')] bg-center bg-no-repeat bg-contain flex-col overflow-hidden p-16;
 }
 }
 

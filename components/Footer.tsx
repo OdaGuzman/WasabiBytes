@@ -15,7 +15,7 @@ const Footer = () => {
           <li><a href="#login">L O G I N</a></li>
         </ul>
 
-        <ul className="footer__social gap-8 flex justify-center items-center">
+        <ul className="gap-8 flex justify-center items-center">
           <li className="flex-center">
             <Image
               src="/assets/facebook.svg"

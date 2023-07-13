@@ -5,7 +5,7 @@ const Trending = () => {
     <div className="trending" id="food">
       <div className="trending-sushi">
         <div className="trending__content" data-aos="fade-right">
-          <p className="sushi__subtitle">What’s Trending / トレンド</p>
+          <p className="sushi__subtitle">What&apos;s Trending / トレンド</p>
 
           <h3 className="sushi__title">Japanese Sushi
           </h3>
