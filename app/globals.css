@@ -230,8 +230,8 @@
 }
 
 
-@layer components{
-/* .trending {
+/* @layer components{
+.trending {
   @apply relative flex flex-col overflow-hidden;
 } 
 
@@ -312,8 +312,8 @@
 } */
 /* .trending__arrow-right {
   @apply right-[-2.5px] bottom-[12%];
-} */
-}
+} 
+}*/
 
 @layer components {
 :root {

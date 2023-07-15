@@ -108,11 +108,11 @@ const Trending = () => {
           </div>
         </div>
       </div>
-      <div className="absolute z-[1] w-40 h-40 bg-[color:var(--secondary-color)] cursor-pointer flex justify-center items-center rounded-[100%] left-[44%] top-[44%]">
+      <div className="absolute z-[1] w-40 h-40 bg-secondary-color cursor-pointer flex justify-center items-center rounded-[100%] left-[44%] top-[44%]">
         <p className="text-lg font-500 font-jakarta uppercase text-white">Discover</p>
       </div>
       <div className=" w-full min-h-[640px] flex flex-row;">
-        <div className="flex-1 relative bg-[color:var(--color-white)] bg-no-repeat bg-contain bg-center px-16 py-8 flex-center">
+        <div className="flex-1 relative bg-white bg-no-repeat bg-contain bg-center px-16 py-8 flex-center">
           <Image
             src="/assets/sushi-4.png"
             alt="sushi-a"
