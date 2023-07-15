@@ -18,11 +18,11 @@ const Header = () => {
         </li>
         <li>
           <Image
-            src="/assets/user-nav.png"
+            src="/assets/usernav.png"
             alt="User Log In"
             title="User Log In"
-            width={35}
-            height={60}
+            width={40}
+            height={40}
           />
         </li>
       </ul>

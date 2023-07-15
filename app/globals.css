@@ -178,9 +178,9 @@
   @apply min-w-[260px] h-fit flex items-center flex-col border p-[38px] rounded-[36px] border-solid border-[rgba(255,255,255,0.2)];
   background: rgba(255, 255, 255, 0.05);
 }
-.popular-foods__card-image {
+/* .popular-foods__card-image {
   @apply w-[110px] h-[84px] object-contain;
-}
+} */
 .popular-foods__card-title {
   @apply font-semibold text-2xl leading-8 text-white text-center mt-[47px];
   font-family: var(--playfair-display);
