@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
 
 @layer components{
 .about-us {
   @apply flex min-h-[720px] overflow-hidden;
-
 }
 .about-us__image {
   @apply flex-1 flex flex-col justify-center relative;
@@ -21,27 +22,27 @@
 .about-us__image-sushi3 {
   @apply border-b-[color:var(--color-creamson)] bg-[url("../public/assets/aboutbg1.png")] border-b-8 border-solid;
 }
-.about-us__image-sushi2 {
-  @apply bg-[url("../public/assets/aboutbg2.png")];
-}
-.about-us__image-sushi3 img {
+/* .about-us__image-sushi2 {
+  @apply bg-[url("/assets/aboutbg2.png")];
+} 
+ .about-us__image-sushi3 img {
   @apply w-[225px] h-[200px];
-}
-.about-us__image-sushi2 img {
+} 
+ .about-us__image-sushi2 img {
   @apply w-60 h-40;
-}
+} 
 .about-us__button {
   @apply absolute min-h-[64px] text-white font-medium text-lg leading-[23px] cursor-pointer px-8 py-3 rounded-[32px_0_0_32px] border-0 right-0;
   background: var(--secondary-color);
   outline: 0;
   font-family: var(--plus-jakarta-sans);
-}
+} 
 .about-us__button img {
   @apply object-contain ml-8;
 }
 .about-us__content {
   @apply flex-1 flex justify-center flex-col p-16;
-}
+}*/
 }
 
 
@@ -281,36 +282,35 @@
 }
 .trending-drink .trending__image {
   @apply bg-[url("../public/assets/japanese\_drinks.png")];
-} */
-/* .trending__image img {
+} 
+.trending__image img {
   @apply w-[254px] h-[260px] object-contain;
-} */
+} 
 
-/* Arrows */
-/* .trending__arrow {
+Arrows .trending__arrow {
   @apply absolute z-[1];
-} */
-/* .trending__arrow img {
+} 
+ .trending__arrow img {
   @apply object-contain;
-} */
-/* .trending__arrow-left {
+} 
+ .trending__arrow-left {
   @apply left-[-2.5px] top-[12%];
-} */
-/* .trending__arrow-left img,
+} 
+ .trending__arrow-left img,
 .trending__arrow-top img {
   @apply w-auto h-full;
-} */
-/* .trending__arrow-top {
+} 
+ .trending__arrow-top {
   @apply top-[-10.5px] left-[12%];
-} */
-/* .trending__arrow-bottom {
+} 
+ .trending__arrow-bottom {
   @apply bottom-[-6.5px] right-[12%];
-} */
-/* .trending__arrow-bottom img,
+} 
+.trending__arrow-bottom img,
 .trending__arrow-right img {
   @apply w-full h-auto;
-} */
-/* .trending__arrow-right {
+} 
+ .trending__arrow-right {
   @apply right-[-2.5px] bottom-[12%];
 } 
 }*/
@@ -344,10 +344,10 @@ a {
 .flex-between {
   @apply flex justify-between items-center;
 }
-.sushi__subtitle {
+/* .sushi__subtitle {
   @apply text-lg font-normal text-[color:var(--primary-color)] opacity-80 tracking-[-0.01em];
   font-family: var(--plus-jakarta-sans);
-}
+} 
 .sushi__title {
   @apply text-[64px] font-semibold text-[color:var(--secondary-color)] mt-4;
   font-family: var(--playfair-display);
@@ -355,7 +355,7 @@ a {
 .sushi__description {
   @apply text-lg font-normal leading-9 tracking-[-0.01em] text-[color:var(--secondary-color)] opacity-80 mx-0 my-8;
   font-family: var(--plus-jakarta-sans);
-}
+}*/
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .sushi__hide-scrollbar::-webkit-scrollbar {
@@ -378,12 +378,14 @@ a {
   .about-us__image {
     @apply flex-row;
   }
-  .about-us__image-sushi3 {
-    @apply border-r-[color:var(--color-creamson)] border-r-8 border-b-[none] border-solid;
-  }
-  .about-us__button {
+    /* .about-us__image-sushi3 {
+      @apply border-r-[color:var(--color-creamson)] border-r-8 border-b-[none] border-solid;
+    } 
+     .about-us__image-sushi2 {
+  @apply bg-[url("/assets/aboutbg2.png")];
+}  .about-us__button {
     @apply hidden;
-  }
+  } */
 }
 @media screen and (max-width: 750px) {
   .about-us__image {
