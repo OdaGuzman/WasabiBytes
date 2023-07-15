@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <div className="bg-white font-jakarta">
-      <div className="flex w-full flex-wrap gap-44 overflow-hidden px-10 py-5">
+      <div className="flex w-full flex-wrap justify-between overflow-hidden px-10 py-5">
         <h3 className="text-secondary-color text-2xl font-600 cursor-pointer">
           <span className="text-primary-color">WASABI    </span> B Y T E S
         </h3>
@@ -16,30 +16,30 @@ const Footer = () => {
         </ul>
 
         <ul className="gap-8 flex justify-center items-center">
-          <li className="flex-center">
+          <li className="flex-center bg-black rounded-full h-8 w-8">
             <Image
               src="/assets/facebook.svg"
               alt="facebook"
-              className="object-contain"
-              width={45}
-              height={45}
+              className="object-contain w-4 h-4"
+              width={30}
+              height={30}
             />
           </li>
-          <li className="flex-center">
+          <li className="flex-center bg-black rounded-full h-8 w-8">
             <Image
               src="/assets/instagram.svg"
               alt="instagram"
-              className="object-contain"
+              className="object-contain w-4 h-4"
               width={45}
               height={45}
             />
           </li>
 
-          <li className="flex-center">
+          <li className="flex-center bg-black rounded-full h-8 w-8">
             <Image
               src="/assets/twitter.svg"
               alt="twitter"
-              className="object-contain"
+              className="object-contain w-4 h-4"
               width={45}
               height={45}
             />

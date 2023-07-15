@@ -3,27 +3,41 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className="about-us" id="about-us">
-      <div className="about-us__image">
-        <div className="about-us__image-sushi3">
-          <img src="assets/sushi-3.png" alt="sushi" data-aos="fade-right" />
+    <div className="flex min-h-[720px] overflow-hidden" id="about-us">
+      <div className="flex-1 flex flex-col justify-center relative bg-white">
+        <div className="about-us__image-sushi3 border-r-7 border-b-none border-solid border-r-creamson bg-[url('/assets/aboutbg1.png')]  flex-1 flex items-center bg-center bg-no-repeat bg-contain px-16 py-8">
+          <Image
+            src="/assets/sushi-3.png"
+            alt="sushi"
+            width={225}
+            height={200}
+          />
         </div>
 
-        <button className="about-us__button">
-          Learn More
+        <div className="flex items-center absolute min-h-[64px] text-white font-medium text-lg px-8 py-3 rounded-[32px_0_0_32px] border-0 right-0 bg-black outline-0 font-jakarta">
+          私たちに関しては
+          {/* <Image
+            src="/assets/arrow-up-right.svg"
+            className="object-contain ml-8"
+            alt="learn more"
+            width={142}
+            height={40}
+          /> */}
+        </div>
 
-          <img src="assets/arrow-up-right.svg" alt="learn more" />
-        </button>
-
-        <div className="about-us__image-sushi2">
-          <img src="assets/sushi-2.png" alt="sushi" data-aos="fade-right" />
+        <div className="bg-[url('/assets/aboutbg2.png')]  flex-1 flex items-center bg-center bg-no-repeat bg-contain px-16 py-8">
+          <Image
+            src="/assets/sushi-2.png"
+            alt="sushi"
+            width={225}
+            height={200} />
         </div>
       </div>
 
-      <div className="about-us__content" data-aos="fade-left">
-        <p className="sushi__subtitle">About Us / 私たちに関しては</p>
-        <h3 className="sushi__title">Our mission is to bring true Japanese flavours to you.</h3>
-        <p className="sushi__description">We will continue to provide the experience of Omotenashi, the Japanese mindset of
+      <div className="flex-1 flex justify-center flex-col p-16">
+        <p className="font-jakarta text-xl opacity-80 text-primary-color">About Us</p>
+        <h3 className="mt-4 text-secondary-color text-[64px] font-playfair font-600">Our mission is to bring true Japanese flavours to you.</h3>
+        <p className="font-jakarta text-lg leading-9 tracking-[-0.01em] opacity-80 mx-0 my-8 font-600">We will continue to provide the experience of Omotenashi, the Japanese mindset of
           hospitality, with our shopping and dining for our customers.
         </p>
       </div>
