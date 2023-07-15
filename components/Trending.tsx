@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Trending = () => {
   return (
-    <div className="trending" id="food">
-      <div className="trending-sushi">
-        <div className="trending__content" data-aos="fade-right">
+    <div className="relative flex flex-col overflow-hidden" id="food">
+      <div className="w-full min-h-[640px] flex flex-row;">
+        <div className="flex-1 flex justify-center flex-col px-16 py-8">
           <p className="sushi__subtitle">What&apos;s Trending / トレンド</p>
 
           <h3 className="sushi__title">Japanese Sushi
@@ -12,119 +12,207 @@ const Trending = () => {
           <p className="sushi__description">Feel the taste of the most delicious Sushi here.
           </p>
 
-          <ul className="trending__list flex-between">
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+          <ul className="trending__list flex-wrap gap-5 list-none flex-between">
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 bg-primary-color rounded-full flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Make Sushi</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Maki Sushi</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 bg-primary-color rounded-full flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
               <p>Oshizushi</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 bg-primary-color rounded-full flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Uramaki Sushi</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Uramaki Sushi</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 bg-primary-color rounded-full flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Nigiri Sushi</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Nigiri Sushi</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 bg-primary-color rounded-full flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Temaki Sushi</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Temaki Sushi</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 bg-primary-color rounded-full flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Inari Sushi</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Inari Sushi</p>
             </li>
           </ul>
         </div>
 
-        <div className="trending__image flex-center">
-          <img src="assets/sushi-5.png" alt="sushi-5" data-aos="fade-left" />
+        <div className="flex-1 relative bg-white bg-no-repeat bg-contain bg-center px-16 py-8 flex-center">
+          <Image
+            src="/assets/sushi-5.png"
+            alt="sushi-5"
+            width={254}
+            height={260} />
 
-          <div className="trending__arrow trending__arrow-left">
-            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          <div className="absolute z-1 left-[-2.5px] top-[12%]">
+            <Image
+              src="assets/arrow-vertical.svg" alt="arrow vertical"
+              className="object-contain w-auto h-full"
+              width={423}
+              height={6}
+            />
           </div>
 
-          <div className="trending__arrow trending__arrow-bottom">
-            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          <div className="absolute z-1 bottom-[-6.5px] right-[12%]">
+            <Image
+              src="assets/arrow-horizontal.svg" alt="arrow vertical"
+              className="object-contain w-full h-auto"
+              width={423}
+              height={6}
+            />
           </div>
         </div>
       </div>
-      <div className="trending__discover" data-aos="zoom-in">
-        <p>Discover</p>
+      <div className="absolute z-[1] w-40 h-40 bg-secondary-color cursor-pointer flex justify-center items-center rounded-[100%] left-[44%] top-[44%]">
+        <p className="text-lg font-500 font-jakarta uppercase text-white">Discover</p>
       </div>
-      <div className="trending-drinks">
-        <div className="trending__image flex-center">
-          <img src="assets/sushi-4.png" alt="sushi-4" data-aos="fade-right" />
+      <div className=" w-full min-h-[640px] flex flex-row;">
+        <div className="flex-1 relative bg-white bg-no-repeat bg-contain bg-center px-16 py-8 flex-center">
+          <Image
+            src="/assets/sushi-4.png"
+            alt="sushi-a"
+            width={254}
+            height={260} />
 
-          <div className="trending__arrow trending__arrow-top">
-            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          <div className="absolute z-1 top-[-10.5px] left-[12%]">
+            <Image
+              src="assets/arrow-horizontal.svg" alt="arrow horizontal"
+              className="object-contain w-auto h-full"
+              width={423}
+              height={6}
+            />
           </div>
 
-          <div className="trending__arrow trending__arrow-right">
-            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          <div className="absolute z-1 right-[-2.5px] bottom-[12%]">
+            <Image
+              src="assets/arrow-vertical.svg" alt="arrow vertical"
+              className="object-contain w-full h-auto"
+              width={423}
+              height={6}
+            />
           </div>
         </div>
 
-        <div className="trending__content" data-aos="fade-left">
-          <p className="sushi__subtitle">What’s Trending / トレンド</p>
+        <div className="flex-1 flex justify-center flex-col px-16 py-8">
+          <p className="sushi__subtitle">What&apos;’s Trending / トレンド</p>
 
           <h3 className="sushi__title">Japanese Drinks
           </h3>
-          <p className="sushi__description">Feel the taste of the most delicious Japense drinks here.
+          <p className="sushi__description">Feel the taste of the most delicious Japanese drinks here.
           </p>
 
-          <ul className="trending__list flex-between">
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+          <ul className="trending__list flex-wrap gap-5 list-none flex-between">
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className=" w-6 h-6 rounded-full bg-primary-color flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Oruncha</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Oruncha</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 rounded-full bg-primary-color flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">
                 Sakura Tea</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 rounded-full bg-primary-color flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Aojiru</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Aojiru</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 rounded-full bg-primary-color flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Ofukucha</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Ofukucha</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 rounded-full bg-primary-color flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Kombu-cha</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Kombu-cha</p>
             </li>
-            <li>
-              <div className="trending__icon flex-center">
-                <img src="assets/check.svg" alt="check" />
+            <li className="flex-1 flex items-center flex-row gap-3 min-w-[210px]">
+              <div className="w-6 h-6 rounded-full bg-primary-color flex-center">
+                <Image
+                  src="assets/check.svg"
+                  alt="check"
+                  className="object-contain"
+                  width={12}
+                  height={14} />
               </div>
-              <p>Mugicha</p>
+              <p className="font-jakarta flex-1 text-base text-secondary-color font-500">Mugicha</p>
             </li>
           </ul>
         </div>
