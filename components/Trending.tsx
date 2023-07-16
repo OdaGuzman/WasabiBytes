@@ -5,9 +5,9 @@ const Trending = () => {
     <div className="relative flex flex-col overflow-hidden" id="food">
       <div className="w-full min-h-[640px] flex flex-row;">
         <div className="flex-1 flex justify-center flex-col px-16 py-8">
-          <p className="sushi__subtitle">What&apos;s Trending / トレンド</p>
+          <p className="text-lg font-normal text-primary-color opacity-80 tracking-[-0.01em] font-jakarta">What&apos;s Trending / トレンド</p>
 
-          <h3 className="sushi__title">Japanese Sushi
+          <h3 className="text-[64px] font-semibold text-secondary-color mt-4 font-playfair">Japanese Sushi
           </h3>
           <p className="sushi__description">Feel the taste of the most delicious Sushi here.
           </p>
@@ -139,9 +139,9 @@ const Trending = () => {
         </div>
 
         <div className="flex-1 flex justify-center flex-col px-16 py-8">
-          <p className="sushi__subtitle">What&apos;’s Trending / トレンド</p>
+          <p className="text-lg font-normal text-primary-color opacity-80 tracking-[-0.01em] font-jakarta">What&apos;s Trending / トレンド</p>
 
-          <h3 className="sushi__title">Japanese Drinks
+          <h3 className="text-[64px] font-semibold text-secondary-color mt-4 font-playfair">Japanese Drinks
           </h3>
           <p className="sushi__description">Feel the taste of the most delicious Japanese drinks here.
           </p>
