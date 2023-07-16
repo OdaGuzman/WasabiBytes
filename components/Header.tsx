@@ -18,7 +18,7 @@ const Header = () => {
         </li>
         <li>
           <Image
-            src="/assets/usernav.png"
+            src="/assets/userhat.png"
             alt="User Log In"
             title="User Log In"
             width={40}
