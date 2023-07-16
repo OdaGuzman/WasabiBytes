@@ -138,17 +138,17 @@
 
 @layer components{
 
-.popular-foods {
+/* .popular-foods {
   @apply flex flex-col bg-[color:var(--primary-color)] bg-[url("../public/assets/popular\_bg.png")] bg-center bg-no-repeat bg-contain overflow-hidden p-16;
-}
-.popular-foods__title {
+} */
+/* .popular-foods__title {
   @apply text-[56px] font-semibold leading-[78px] text-white text-center;
   font-family: var(--playfair-display);
-}
-.popular-foods__filters {
+} */
+/* .popular-foods__filters {
   @apply max-w-full overflow-x-auto flex justify-center gap-6 mt-12;
-}
-.popular-foods__filter-btn {
+} */
+/* .popular-foods__filter-btn {
   @apply flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white cursor-pointer px-7 py-2.5 rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-[color:var(--primary-color)];
   background: rgba(255, 255, 255, 0.05);
   font-family: var(--plus-jakarta-sans);
@@ -162,47 +162,47 @@
 }
 .popular-foods__filter-btn:hover {
   background: #fff;
-}
-.popular-foods__catalogue {
+} */
+/* .popular-foods__catalogue {
   @apply flex justify-center items-end flex-wrap gap-14 mt-16;
-}
-.popular-foods__btn {
+} */
+/* .popular-foods__btn {
   @apply w-fit font-medium text-lg leading-[23px] text-white cursor-pointer mt-20 mb-0 mx-auto px-[30px] py-5 rounded-[64px] border-[none];
   outline: none;
   background: var(--secondary-color);
 }
 .popular-foods__btn img {
   @apply w-3.5 h-3.5 object-contain ml-[21px];
-}
-.popular-foods__card {
+} */
+/* .popular-foods__card {
   @apply min-w-[260px] h-fit flex items-center flex-col border p-[38px] rounded-[36px] border-solid border-[rgba(255,255,255,0.2)];
   background: rgba(255, 255, 255, 0.05);
-}
+} */
 /* .popular-foods__card-image {
   @apply w-[110px] h-[84px] object-contain;
 } */
-.popular-foods__card-title {
+/* .popular-foods__card-title {
   @apply font-semibold text-2xl leading-8 text-white text-center mt-[47px];
   font-family: var(--playfair-display);
-}
-.popular-foods__card-details {
+} */
+/* .popular-foods__card-details {
   @apply w-full mt-8;
-}
-.popular-foods__card-rating {
+} */
+/* .popular-foods__card-rating {
   @apply flex items-center gap-2;
-}
-.popular-foods__card-rating img {
+} */
+/* .popular-foods__card-rating img {
   @apply w-6 h-6 object-contain;
-}
-.popular-foods__card-rating p {
+} */
+/* .popular-foods__card-rating p {
   @apply text-xl font-light text-white;
   font-family: var(--plus-jakarta-sans);
-}
-.popular-foods__card-price {
+} */
+/* .popular-foods__card-price {
   @apply text-xl font-medium text-white;
   font-family: var(--plus-jakarta-sans);
-}
-.popular-foods__card.active-card {
+} */
+/* .popular-foods__card.active-card {
   @apply min-w-[340px];
   background: #fff;
 }
@@ -220,14 +220,14 @@
 }
 .popular-foods__card.active-card .popular-foods__card-price {
   @apply text-2xl text-[color:var(--secondary-color)];
-}
+} */
 }
 
 @layer components{
 
-.subscription {
+/* .subscription {
   @apply bg-[color:var(--primary-color)] bg-[url('../public/assets/subscribe\_bg.png')] bg-center bg-no-repeat bg-contain flex-col overflow-hidden p-16;
-}
+} */
 }
 
 
@@ -358,12 +358,12 @@ a {
 }*/
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.sushi__hide-scrollbar::-webkit-scrollbar {
+.hide-scrollbar::-webkit-scrollbar {
   @apply hidden;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.sushi__hide-scrollbar {
+.hide-scrollbar {
   -ms-overflow-style: none;
 
   /* IE and Edge */
