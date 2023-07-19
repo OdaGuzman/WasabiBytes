@@ -3,6 +3,7 @@ import Footer from '../../../components/Footer'
 import React from 'react'
 import Image from 'next/image'
 
+
 const Menu = () => {
   return (
     <div>
@@ -10,11 +11,11 @@ const Menu = () => {
 
       <div className="relative flex h-screen">
         {/* Background */}
-        <div className="flex absolute inset-0 bg-red-800">
+        <div className="flex absolute inset-0 bg-primary-color">
 
           {/* Image */}
           <div className="flex items-center justify-center w-1/2">
-            <img
+            <Image
               src="/assets/signup1.png"
               alt="Image"
               className=""
