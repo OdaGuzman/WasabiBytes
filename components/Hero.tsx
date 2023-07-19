@@ -44,7 +44,7 @@ const Hero = () => {
               height={42}
               className="w-[42px] h-[42px] object-contain"
             />
-            <p className="text-xs font-normal leading-8 text-secondary-color opacity-80 font-jakarta">"Loved the ramen menu. Best quality in town."</p>
+            <p className="text-xs font-normal leading-8 text-secondary-color opacity-80 font-jakarta">&apos;Loved the ramen menu. Best quality in town.&apos;</p>
           </div>
         </div>
       </div>
