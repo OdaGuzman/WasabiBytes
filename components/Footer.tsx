@@ -10,9 +10,9 @@ const Footer = () => {
         </h3>
 
         <ul className="flex gap-24 list-none pt-2">
-          <li><a href="#menu">M E N U</a></li>
-          <li><a href="#about">A B O U T</a></li>
-          <li><a href="#login">L O G I N</a></li>
+          <li><a href="../app/menu/page.tsx">M E N U</a></li>
+          <li><a href="../app/about/page.tsxt">A B O U T</a></li>
+          <li><a href="../app/(User)/signup">L O G I N</a></li>
         </ul>
 
         <ul className="gap-8 flex justify-center items-center">
