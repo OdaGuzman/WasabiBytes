@@ -7,7 +7,22 @@ const Menu = () => {
     <div>
       <Header />
 
+      <div className="flex h-screen bg-red-500">
+        {/* Image */}
+        <div className="flex items-center justify-center w-1/2">
+          <img src="/path/to/image.jpg" alt="Image" className="w-96" />
+        </div>
 
+        {/* Form */}
+        <div className="flex items-center justify-center w-1/2">
+          <div className="bg-white p-8 rounded-lg">
+            <h2 className="text-4xl text-center font-playfair">Sign Up / Login</h2>
+            <form>
+              {/* Add your form fields here */}
+            </form>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </div>

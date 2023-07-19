@@ -10,14 +10,13 @@ const Header = () => {
       </div>
 
       <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-secondary-color text-base uppercase leading-5 cursor-pointer">
-        <li>
-          <a href="../app/menu/page.tsx">Menu</a>
+        {/* <li>
+          <a href="#menu">Menu</a>
         </li>
         <li>
-          <a href="../app/about/page.tsx">About</a>
-        </li>
+          <a href="#about">About</a>
+        </li> */}
         <li>
-          
           <Image
             src="/assets/userhat.png"
             alt="User Log In"
