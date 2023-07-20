@@ -13,7 +13,6 @@ const Menu = () => {
           <Image
             src="/path/to/image.jpg"
             alt="Image"
-            className=""
             width={96}
             height={96} />
         </div>
