@@ -22,7 +22,7 @@ const Hero = () => {
 
       <div className="flex-[1.22] flex justify-between flex-col">
         <div className="p-8 mx-7">
-          <h1 className="text-7xl font-600 leading-[99px]  font-playfair my-8 pb-6">Feel the taste of Japanese food</h1>
+          <h1 className="text-7xl font-600 leading-[99px] font-playfair my-8 pb-6">Feel the taste of Japanese food</h1>
           <p className="mx-0 my-8 font-jakarta pb-6">Embark on a tantalizing culinary journey without leaving the comfort of your home. Immerse yourself in the rich flavors and traditions of Japan as you savor the most popular and authentic Japanese cuisine.</p>
 
           <div className="flex flex-wrap justify-center gap-9 mr-0 mt-[41px] mb-0">
