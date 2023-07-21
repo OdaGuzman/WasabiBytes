@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
 // Define the prop types for the MenuItem component
 interface MenuItemProps {
   name: string;
@@ -9,15 +8,16 @@ interface MenuItemProps {
   price: number;
   imageUrl: string;
 }
-
-const MenuItem: React.FC<MenuItemProps> = ({ name, description, price }) => {
+//bg-blue-500 hover:bg-blue-600 text-white font-bold  rounded mt-2
+const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, imageUrl }) => {
   return (
-    <div className="flex flex-col items-center">
-      <img src="IMAGE_URL_HERE" alt={name} className="w-40 h-40" />
-      <h4 className="text-xl font-bold">{name}</h4>
+    <div className="flex flex-row lg:flex-col items-center">
+      <img src={imageUrl} alt={name} className="w-40 h-40" />
+      <h4 className="text-sm lg:text-xl font-bold">{name}</h4>
       <p>{description}</p>
       <p className="font-bold">${price}</p>
-      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-4 py-2 rounded mt-2">
+      <button className="text-white text-lg leading-[23px] px-4 py-2 mt-2 rounded-[36px] border-[none] outline-none bg-black font-jakarta
+      ">
         Add to Cart
       </button>
     </div>
@@ -46,19 +46,19 @@ const Page = () => {
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
         </div>
       </div>
@@ -73,25 +73,25 @@ const Page = () => {
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
         </div>
       </div>
@@ -106,25 +106,25 @@ const Page = () => {
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           <MenuItem
             name="Sushi Roll 2"
             description="Mouthwatering sushi roll with premium fish."
             price={12.99}
-            imageUrl="../../public/assets/desserts.png"
+            imageUrl="/assets/desserts.png"
           />
           {/* Add two more beverages */}
         </div>

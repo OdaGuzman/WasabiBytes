@@ -4,18 +4,18 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <div className="bg-white font-jakarta">
-      <div className="flex w-full flex-wrap justify-between overflow-hidden px-10 py-5">
-        <h3 className="text-secondary-color text-2xl font-600 cursor-pointer">
+      <div className="flex flex-col lg:flex-row w-full flex-wrap justify-between overflow-hidden px-10 py-5">
+        <h3 className="text-secondary-color text-md lg:text-2xl font-600">
           <span className="text-primary-color">WASABI    </span> B Y T E S
         </h3>
 
-        <ul className="flex gap-24 list-none pt-2">
+        <ul className="flex gap-12 lg:gap-24 list-none pt-2 text-sm lg:text-xl w-full lg:w-auto justify-between">
           <li><a href="../app/menu/page.tsx">M E N U</a></li>
-          <li><a href="../app/about/page.tsxt">A B O U T</a></li>
+          <li><a href="../app/about/page.tsx">A B O U T</a></li>
           <li><a href="../app/(User)/signup">L O G I N</a></li>
         </ul>
 
-        <ul className="gap-8 flex justify-center items-center">
+        <ul className="lg:gap-8 flex lg:justify-center items-center pt-4 lg:pt-0 w-full lg:w-auto justify-between ml-1 lg:ml-0 pr-4 lg:pr-0">
           <li className="flex-center bg-black rounded-full h-8 w-8">
             <Image
               src="/assets/facebook.svg"
