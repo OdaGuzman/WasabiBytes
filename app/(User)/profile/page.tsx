@@ -7,14 +7,14 @@ const Menu = () => {
     <div>
       <Header />
 
-      <div className="flex h-screen bg-red-500">
+      <div className="flex h-screen">
         {/* Image */}
         <div className="flex items-center justify-center w-1/2">
           <Image
-            src="/path/to/image.jpg"
+            src="/assets/signup2.png"
             alt="Image"
-            width={96}
-            height={96} />
+            width={300}
+            height={300} />
         </div>
 
         {/* Form */}
