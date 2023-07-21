@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className="flex min-h-[720px] overflow-hidden" id="about-us">
-      <div className="flex-1 flex flex-col justify-center relative bg-white">
-        <div className="about-us__image-sushi3 border-r-7 border-b-none border-solid border-r-creamson bg-[url('/assets/aboutbg1.png')] flex-1 flex items-center bg-center bg-no-repeat bg-contain px-16 py-8">
+    <div className="flex min-h-[720px] overflow-hidden flex-col lg:flex-row" id="about-us">
+      <div className="flex-1 flex flex-col md:flex-row lg:flex-col justify-center relative bg-white">
+        <div className="border-r-7 border-b-none border-solid border-r-creamson bg-[url('/assets/aboutbg1.png')] flex-1 flex items-center bg-center bg-no-repeat bg-contain p-8 sm:px-16 sm:py-8">
           <Image
             src="/assets/sushi-3.png"
             alt="sushi"
