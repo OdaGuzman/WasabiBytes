@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.glass {
+  background-color: rgba(255, 255, 290, 0.3); /* Replace with the desired background color and opacity */
+  border: 2px solid rgba(255, 255, 290, 0.7); /* Replace with the desired border color and opacity */
+  box-shadow: 0 0 17px rgba(255, 255, 290, 0.7); /* Replace with the desired shadow color and intensity */
+}
+
 @layer components{
 .about-us {
   @apply flex min-h-[720px] overflow-hidden;

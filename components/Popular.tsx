@@ -106,7 +106,7 @@ const Popular = () => {
 
           <Image
             className="object-contain hover:scale-105 transform duration-300"
-            src="/assets/drink4.png"
+            src="/assets/beverage0.png"
             alt="sake"
             width={214}
             height={133} />
