@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 const Header = () => {
   return (
 
@@ -11,13 +11,13 @@ const Header = () => {
 
       <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-secondary-color text-base uppercase leading-5 cursor-pointer">
         <li>
-          <a href="../app/menu/page.tsx">Menu</a>
+          <Link href="../app/menu/page.tsx">Menu</Link>
         </li>
-        <li>
+        {/* <li>
           <a href="../app/about/page.tsx">About</a>
-        </li>
+        </li> */}
         <li>
-          
+
           <Image
             src="/assets/userhat.png"
             alt="User Log In"
