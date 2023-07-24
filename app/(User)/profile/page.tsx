@@ -181,7 +181,7 @@ const SignUpForm: React.FC = () => {
               </button>
               <button
                 type="submit"
-                className="flex items-center px-10 py-3 text-white bg-primary-color rounded-full border-black hover:bg-opacity-80 focus:outline-none justify-center"
+                className="flex items-center px-10 py-3 text-white bg-primary-color rounded-full border-black hover:bg-opacity-90 focus:outline-none justify-center"
               >
 
                 Discard
