@@ -13,7 +13,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, imageUrl 
   return (
     <div className="flex flex-col items-center justify-center lg:justify-start text-center lg:text-left">
       {/* For website version */}
-      <div className="lg:w-40 lg:h-40 lg:mr-4 lg:order-1">
+      <div className="lg:w-40 lg:h-40 lg:order-1">
         <img src={imageUrl} alt={name} className="w-full h-full" />
       </div>
       <div className="lg:order-2">
@@ -44,7 +44,7 @@ const Page = () => {
         <div className="mx-5 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
           <MenuItem
             name="Tokyo Sunset Roll"
-            description="Delight in the artful harmony of succulent salmon, sweet mango, and creamy avocado, all rolled in a tapestry of sushi rice and nori."
+            description="Delight yourself in the artful harmony of succulent salmon, tuna, sweet mango, and creamy avocado, all rolled in a tapestry of sushi rice and nori."
             price={12.49}
             imageUrl="/assets/sushicombo0.png"
           />
@@ -62,7 +62,7 @@ const Page = () => {
           />
           <MenuItem
             name="Midnight Moon Roll"
-            description="This celestial combo showcases the brilliance of luscious tuna, creamy crab, and the mystery of black caviar, all nestled in a galaxy of sushi rice and nori."
+            description="This combo showcases the brilliance of luscious tuna, creamy crab, and the mystery of black caviar, all nestled in a galaxy of sushi rice and nori."
             price={9.99}
             imageUrl="/assets/sushicombo4.png"
           />
@@ -77,13 +77,13 @@ const Page = () => {
         <div className="mx-5 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
           <MenuItem
             name="Protein Powerhouse"
-            description=" Dive into a rich and aromatic broth infused with bold spices that tantalize your taste buds. Succulent shrimp and velvety tofu mingle perfectly, while soft-boiled eggs add a creamy touch. "
+            description=" Dive into a rich and aromatic broth infused with bold spices that tantalize your taste buds. Succulent shrimp and velvety tofu, with soft-boiled eggs. "
             price={24.99}
             imageUrl="/assets/ramen0.png"
           />
           <MenuItem
             name="Twin Delight"
-            description="Our savory noodle soup features succulent shrimps, farm-fresh eggs, crunchy celery, and toothsome noodles, all simmered in a delectable broth. A satisfying blend of flavors awaits you in every spoonful."
+            description="Our savory noodle soup features succulent shrimps, farm-fresh eggs, crunchy celery, and toothsome noodles, all simmered in a delectable broth."
             price={16.99}
             imageUrl="/assets/ramen1.png"
           />
@@ -95,7 +95,7 @@ const Page = () => {
           />
           <MenuItem
             name="Sunny Fusion"
-            description="Taste the magic of a sunny-side-up egg perched gracefully on a bed of savory vegetables, earthy mushrooms, and savory bacon, all mingling harmoniously with flavorful noodles."
+            description="Taste the magic of a sunny-side-up egg perched gracefully on a bed of savory vegetables, mushrooms, and bacon, all mingling harmoniously with egg noodles."
             price={15.99}
             imageUrl="/assets/ramen3.png"
           />
@@ -110,7 +110,7 @@ const Page = () => {
         <div className="mx-5 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
           <MenuItem
             name="Sake Serenade"
-            description="Crafted with utmost care and tradition, this Japanese rice wine exudes elegance and complexity. Savor its smooth and delicate notes, as it offers a serene serenade to your palate."
+            description="Crafted with utmost care and tradition, this Japanese rice wine exudes elegance and complexity. Savor its smooth and delicate notes."
             price={10.99}
             imageUrl="/assets/beverage0.png"
           />
@@ -140,7 +140,7 @@ const Page = () => {
         <h3 className="text-4xl mt-16 leading-[123px] text-secondary-color text-center font-playfair">
           Desserts 🍡
         </h3>
-        <div className="mx-5 my-7 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
+        <div className="mx-5 my-7 mb-10 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
           <MenuItem
             name="Lime Lava Cake"
             description=" Experience a tangy twist on the classic lava cake! Our sumptuous dessert features a moist and decadent chocolate cake with a zesty lime surprise hidden within."
@@ -149,7 +149,7 @@ const Page = () => {
           />
           <MenuItem
             name="Rainbow Mochi Bliss "
-            description="Indulge in a burst of colors and flavors with our delightful assortment of colorful mochi! Each soft, chewy morsel is a work of art, enveloping various delectable fillings like fruity jams, velvety chocolate, and luscious cream. ."
+            description="Indulge in a burst of colors and flavors with our delightful assortment of colorful mochi! Each soft, chewy morsel is a work of art, enveloping various delectable fillings like fruity jams, velvety chocolate, and luscious cream."
             price={12.99}
             imageUrl="/assets/desserts1.png"
           />
@@ -160,10 +160,10 @@ const Page = () => {
             imageUrl="/assets/desserts2.png"
           />
           <MenuItem
-            name="Chocolate-Dipped Sweet Buns"
+            name="Choco Haven"
             description="Elevate your sweet bun experience with our luscious chocolate-covered delights! Sink your teeth into the heavenly combination of fluffy sweet buns smothered in rich, velvety chocolate."
             price={12.99}
-            imageUrl="/assets/desserts3.png"
+            imageUrl="/assets/desserts5.png"
           />
         </div>
       </div>
