@@ -20,9 +20,8 @@ const SignUpForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your sign-up form submission logic here
     console.log(formData);
-    // You can use the formData object to send data to your backend or perform any other actions.
+
   };
 
   return (

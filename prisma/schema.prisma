@@ -6,6 +6,56 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+model User {
+  id              Int      @id @default(autoincrement())
+  name            String
+  email           String   @unique
+  password        String
+  phone           String?
+  deliveryAddress String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Item {
+  id          Int                 @id @default(autoincrement())
+  name        String
+  description String              @db.VarChar(256)
+  price       Decimal             @default(0) @db.Decimal(10, 2)
+  imageSrc    String              @default("/")
+  categories  CategoriesOnItems[]
+}
+
+model CategoriesOnItems {
+  id         Int  @id @default(autoincrement())
+  itemId     Int
+  categoryId Int
+  Item       Item @relation(fields: [itemId], references: [id])
+}
+
+model Category {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model Order {
+  id           Int          @id @default(autoincrement())
+  userId       Int
+  restaurantId Int
+  orderDate    DateTime
+  orderTotal   Decimal      @default(0) @db.Decimal(10, 2)
+  status       String
+  items        OrderItems[]
+}
+
+model OrderItems {
+  id       Int   @id @default(autoincrement())
+  orderId  Int
+  itemId   Int
+  quantity Int
+  Order    Order @relation(fields: [orderId], references: [id])
 }
