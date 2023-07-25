@@ -129,7 +129,7 @@ const Popular = () => {
         </article>
       </div>
 
-      <button className="w-fit font-medium text-lg leading-[23px] text-white cursor-pointer mt-20 mb-0 mx-auto px-[30px] py-5 rounded-[64px] border-[none] outline-none bg-secondary-color flex items-center">
+      <a href="/menu" className="w-fit font-medium text-lg leading-[23px] text-white cursor-pointer mt-20 mb-0 mx-auto px-[30px] py-5 rounded-[64px] border-[none] outline-none bg-secondary-color flex items-center">
         Explore Our Menu
         <Image
           src="assets/arrow-right.svg"
@@ -137,7 +137,7 @@ const Popular = () => {
           className="flex items-center w-3.5 h-3.5 object-contain ml-[21px]"
           width={14}
           height={14} />
-      </button>
+      </a>
     </div>
   )
 }
