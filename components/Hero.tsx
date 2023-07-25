@@ -25,7 +25,7 @@ const Hero = () => {
           <p className="mx-0 my-8 font-jakarta pb-6">Embark on a tantalizing culinary journey without leaving the comfort of your home. Immerse yourself in the rich flavors and traditions of Japan as you savor the most popular and authentic Japanese cuisine.</p>
 
           <div className="flex flex-wrap justify-center gap-9 mr-0 mt-[41px] mb-0">
-            <button className="min-w-[212px] text-white text-lg leading-[23px] p-5 rounded-[36px] border-[none] outline-none bg-black font-jakarta">Order Now</button>
+            <a href="/menu" className="min-w-[212px] text-white text-lg leading-[23px] p-5 rounded-[36px] border-[none] text-center bg-black font-jakarta">Order Now</a>
           </div>
         </div>
 
