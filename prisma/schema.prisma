@@ -22,24 +22,12 @@ model User {
 }
 
 model Item {
-  id          Int                 @id @default(autoincrement())
-  name        String
-  description String              @db.VarChar(256)
-  price       Decimal             @default(0) @db.Decimal(10, 2)
-  imageSrc    String              @default("/")
-  categories  CategoriesOnItems[]
-}
-
-model CategoriesOnItems {
-  id         Int  @id @default(autoincrement())
-  itemId     Int
-  categoryId Int
-  Item       Item @relation(fields: [itemId], references: [id])
-}
-
-model Category {
-  id   Int    @id @default(autoincrement())
-  name String
+  id                Int                 @id @default(autoincrement())
+  name              String
+  description       String              @db.VarChar(256)
+  price             Decimal             @default(0) @db.Decimal(10, 2)
+  imageSrc          String              @default("/")
+  category          String
 }
 
 model Order {
