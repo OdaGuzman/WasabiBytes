@@ -39,7 +39,7 @@ const Page = () => {
       {/* Sushi Rolls Section*/}
       <div className="container mx-auto mt-8">
         <h3 className="text-4xl leading-[123px] text-secondary-color text-center font-playfair">
-          Sushi Combos 🍱
+          Sushi & Combos 🍱
         </h3>
         <div className="mx-5 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
           <MenuItem
@@ -56,7 +56,7 @@ const Page = () => {
           />
           <MenuItem
             name="Harmony Roll"
-            description="This sushi symphony blends delicate flavors of buttery yellowtail, sweet eel, and velvety cream cheese, skillfully rolled in a harmonious medley of sushi rice and nori."
+            description="This sushi symphony blends delicate flavors of buttery yellowtail, sweet eel, and velvety cream cheese, skillfully rolled in a harmonious medley of sushi rice and nori.M"
             price={14.99}
             imageUrl="/assets/sushicombo3.png"
           />
@@ -143,7 +143,7 @@ const Page = () => {
         <div className="mx-5 my-7 mb-10 lg:grid lg:grid-cols-4 lg:gap-5 text-sm md:text-lg">
           <MenuItem
             name="Lime Lava Cake"
-            description=" Experience a tangy twist on the classic lava cake! Our sumptuous dessert features a moist and decadent chocolate cake with a zesty lime surprise hidden within."
+            description="Experience a tangy twist on the classic lava cake! Our sumptuous dessert features a moist and decadent chocolate cake with a zesty lime surprise hidden within."
             price={10.99}
             imageUrl="/assets/desserts0.png"
           />
