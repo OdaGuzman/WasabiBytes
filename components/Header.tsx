@@ -21,6 +21,18 @@ const Header = () => {
           <a href="../app/about/page.tsx">About</a>
         </li> */}
         <li className="cursor-pointer">
+          <a href="/cart">
+            <Image
+              src="/assets/cart3.png"
+              alt="User Log In"
+              title="User Log In"
+              width={40}
+              height={40}
+            />
+          </a>
+        </li>
+
+        <li className="cursor-pointer">
           <a href="/signup">
             <Image
               src="/assets/userhat.png"
