@@ -54,7 +54,7 @@ const Cart: React.FC = () => {
     <>
       <Header />
       <div className="bg-creamson text-primary-color p-8">
-        <div className="flex items-center justify-center w-full md:w-1/2">
+        {/* <div className="flex items-center justify-center w-full md:w-1/2">
           <Image
             src="/assets/cart1.png"
             className="object-cover"
@@ -62,7 +62,7 @@ const Cart: React.FC = () => {
             width={300}
             height={300}
           />
-        </div>
+        </div> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Cart Items */}
           <div>
