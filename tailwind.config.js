@@ -22,7 +22,7 @@ module.exports = {
         'gray-100': '#888888',
         'creamson': '#fff0de',
       },
-      
+
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
         'jakarta': ['Plus Jakarta Sans', 'sans-serif'],

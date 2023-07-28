@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 // Define the prop types for the MenuItem component
@@ -10,6 +11,15 @@ interface MenuItemProps {
 }
 //bg-blue-500 hover:bg-blue-600 text-white font-bold  rounded mt-2
 const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, imageUrl }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    // Remove the animation class after 5 seconds
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 2000);
+  }
   return (
     <div className="flex flex-col items-center justify-center lg:justify-start text-center lg:text-left">
       {/* For website version */}
@@ -20,9 +30,14 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, imageUrl 
         <h4 className="text-xl font-bold">{name}</h4>
         <p className="text-md md:text-sm py-4">{description}</p>
         <p className="font-bold text-primary-color text-md pb-2">${price}</p>
-        <button className="text-white text-sm leading-[23px] px-4 py-2 mt-2 rounded-[36px] bg-black font-jakarta">
-          Add to Cart
+        <button
+          className={`text-white text-sm leading-[23px] px-4 py-2 mt-2 rounded-[36px] bg-black font-jakarta ${isClicked ? 'animate-sparkle sparkling-button' : ''
+            }`}
+          onClick={handleClick}
+        >
+          {isClicked ? 'Added to Cart 🍣 ✅' : 'Add to Cart'}
         </button>
+
       </div>
     </div>
 
@@ -172,6 +187,6 @@ const Page = () => {
       <Footer />
     </div>
   );
-};
 
+};
 export default Page;
