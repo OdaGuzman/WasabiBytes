@@ -80,7 +80,7 @@ const SignUpForm: React.FC = () => {
               <input
                 type="email"
                 id="email"
-                placeholder='Enter your email address'
+                placeholder='sushilover@wasabi-bytes.com'
                 name="email"
                 className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-primary-color"
                 value={formData.email}
@@ -90,12 +90,12 @@ const SignUpForm: React.FC = () => {
             </div>
             <div className="mb-4">
               <label htmlFor="email" className="block mb-2 font-semibold">
-                E-mail
+                Phone
               </label>
               <input
                 type="phone"
                 id="phone"
-                placeholder='Enter your phone number'
+                placeholder='236-XXX-XXXX'
                 name="phone"
                 className="w-full px-4 py-2 border rounded-full focus:outline-none focus:border-primary-color"
                 value={formData.phone}
