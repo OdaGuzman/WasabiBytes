@@ -15,7 +15,8 @@ const Cart: React.FC = () => {
       quantity: 2,
       price: 12.99,
       // image: '/sushi-roll-1.jpg', // Replace with the actual image URL
-    },
+    }
+    ,
     {
       id: 2,
       name: 'Sushi Roll 2',
@@ -66,7 +67,7 @@ const Cart: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Cart Items */}
           <div>
-            <h2 className="text-xl font-bold mb-4">Order</h2>
+            <h2 className="text-xl font-bold my-4">Order</h2>
             {cartItems.map((item) => (
               <div key={item.id} className="flex items-center mb-4">
                 <div className="w-16 h-16 mr-4">
@@ -91,7 +92,7 @@ const Cart: React.FC = () => {
           </div>
 
           {/* Promo Code */}
-          <div>
+          {/* <div>
             <h2 className="text-xl font-bold mb-4">Promo Code</h2>
             <div className="flex items-center">
               <input
@@ -108,7 +109,7 @@ const Cart: React.FC = () => {
                 Apply
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Delivery Option */}
