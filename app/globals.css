@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+.glass {
+  background-color: rgba(255, 255, 290, 0.3); /* Replace with the desired background color and opacity */
+  border: 2px solid rgba(255, 255, 290, 0.7); /* Replace with the desired border color and opacity */
+  box-shadow: 0 0 17px rgba(255, 255, 290, 0.7); /* Replace with the desired shadow color and intensity */
+}
+/* styles.css */
+@keyframes sparkleAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 0%;
+  }
+}
 
+/* Apply the sparkle effect with alternating colors */
+.sparkling-button {
+  /* Modify the linear gradient to change the colors */
+  background-image: linear-gradient(60deg, orange, purple, orange);
+  background-size: 400% 400%;
+  animation: sparkle 2s linear;
+
+},
 @layer components{
 .about-us {
   @apply flex min-h-[720px] overflow-hidden;
@@ -44,6 +63,79 @@
 }
 }
 
+/* START: about us media queries */
+@media screen and (max-width: 1024px) {
+  .about-us {
+    @apply flex-col;
+  }
+  .about-us__image {
+    @apply flex-row;
+  }
+  .about-us__image-sushi3 {
+    @apply border-r-[color:var(--color-creamson)] border-r-8 border-b-[none] border-solid;
+  }
+  .about-us__button {
+    @apply hidden;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-us__image {
+    @apply flex-col;
+  }
+  .about-us__image-sushi3 {
+    @apply border-b-[color:var(--color-creamson)] border-r-[none] border-b-8 border-solid;
+  }
+  .about-us__button {
+    @apply block top-[47%];
+  }
+}
+@media screen and (max-width: 550px) {
+  .about-us__image-sushi2 img,
+  .about-us__image-sushi3 img {
+    @apply w-6/12 h-40 object-contain;
+  }
+  .about-us__image div {
+    @apply p-8;
+  }
+  .about-us__button {
+    @apply top-[44%];
+  }
+  .about-us__content {
+    @apply p-8;
+  }
+}
+
+@layer components{
+
+.header__nav {
+  @apply flex overflow-hidden;
+}
+.header__logo {
+  @apply flex-1 flex relative p-5;
+}
+.header__logo-overlay {
+  @apply absolute w-full bg-[color:var(--primary-color)] z-[-1] inset-0;
+}
+.header__logo h4 {
+  @apply font-bold text-2xl uppercase text-white opacity-80 pl-[30px];
+  font-family: var(--playfair-display);
+}
+.header__menu,
+.header__menu-mobile {
+  @apply flex-[1.236] flex items-center justify-end gap-16 p-5;
+  list-style: none;
+}
+.header__menu li {
+  @apply font-medium text-[color:var(--secondary-color)] text-base uppercase leading-5 cursor-pointer;
+  font-family: var(--plus-jakarta-sans);
+}
+.header__menu li img {
+  @apply w-6 h-6 object-contain;
+}
+.header__menu-mobile {
+  @apply hidden gap-5 relative;
+  }
+}
 
 
 @layer components{
@@ -123,8 +215,21 @@
 }
 
 @layer components{
-/* DO NOT REMOVE YET */
-
+.footer {
+  @apply w-full flex-wrap gap-5 overflow-hidden px-10 py-5;
+  background: var(--color-white);
+}
+.footer__logo {
+  @apply text-2xl font-[bold] uppercase text-[color:var(--secondary-color)] cursor-pointer;
+  font-family: var(--playfair-display);
+}
+.footer__logo span {
+  @apply text-[color:var(--primary-color)];
+}
+.footer ul {
+  @apply flex last:gap-8;
+  list-style: none;
+}
 .footer__social li {
   @apply w-[42px] h-[42px] bg-[color:var(--secondary-color)] rounded-[100%];
 }
@@ -167,6 +272,7 @@
 }
 .popular-foods__btn {
   @apply w-fit font-medium text-lg leading-[23px] text-white cursor-pointer mt-20 mb-0 mx-auto px-[30px] py-5 rounded-[64px] border-[none];
+  font-family: var(--plus-jakarta-sans);
   outline: none;
   background: var(--secondary-color);
 }
@@ -227,8 +333,54 @@
 .subscription {
   @apply bg-[color:var(--primary-color)] bg-[url('../public/assets/subscribe\_bg.png')] bg-center bg-no-repeat bg-contain flex-col overflow-hidden p-16;
 }
+.subscription h2 {
+  @apply text-[88px] font-semibold leading-[123px] text-white text-center;
+  font-family: var(--playfair-display);
+}
+.subscription p {
+  @apply text-lg font-light leading-9 text-[rgba(255,255,255,0.8)] mt-8;
+  font-family: var(--plus-jakarta-sans);
+}
+.subscription__form {
+  @apply min-w-[480px] flex gap-2.5 border mt-10 pl-6 pr-3.5 py-3.5 rounded-[46px] border-solid border-[rgba(255,255,255,0.5)];
+}
+.subscription__form input {
+  @apply flex-1 text-base font-[400px] text-white opacity-50 border-[none];
+  font-family: var(--plus-jakarta-sans);
+  background: transparent;
+  outline: none;
+}
+.subscription__form input::placeholder {
+  @apply text-white opacity-50;
+}
+.subscription__form button {
+  @apply min-w-[180px] text-base font-medium text-white text-center cursor-pointer p-5 rounded-[46px] border-[none];
+  font-family: var(--plus-jakarta-sans);
+  background: var(--black-400);
+  outline: none;
+}
 }
 
+/* START: subscribe media queries */
+@media screen and (max-width: 550px) {
+  .subscription {
+    @apply px-8 py-16;
+  }
+  .subscription h2 {
+    @apply text-[68px] leading-[100px];
+  }
+  .subscription__form {
+    @apply flex-col gap-5 min-w-full p-0 rounded-[20px] border-[none];
+  }
+  .subscription__form input {
+    @apply min-h-[50px] border px-5 py-2.5 rounded-[30px] border-solid border-[rgba(255,255,255,0.5)];
+  }
+  .subscription__form button {
+    @apply min-w-full;
+  }
+}
+
+/* END: subscribe media queries */
 
 @layer components{
 .trending {
@@ -307,8 +459,56 @@
 }
 }
 
+/* START: trending media queries */
+@media screen and (max-width: 1024px) {
+  .trending-sushi {
+    @apply flex-col;
+  }
+  .trending-drink {
+    @apply flex-col-reverse;
+  }
+  .trending__image {
+    @apply w-full bg-cover;
+  }
+  .trending__discover {
+    @apply hidden;
+  }
+  .trending__arrow {
+    @apply hidden;
+  }
+}
+@media screen and (max-width: 550px) {
+  .trending__image img {
+    @apply w-[70%] h-[70%];
+  }
+  .trending__content {
+    @apply p-8;
+  }
+}
+
 @layer components {
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+/* other css file imports
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/popular.css");
+@import url("sections/trending.css");
+@import url("sections/subscribe.css");
+@import url("sections/footer.css"); */
+
+/* CSS variables for reusablity across all files (including above imported) */
 :root {
+  --playfair-display: "Playfair Display", serif;
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
   --primary-color: #b1454a;
   --secondary-color: #121212;
   --black-200: #020202;
@@ -328,8 +528,6 @@ body {
 a {
   @apply no-underline text-inherit;
 }
-
-/* Subscribe */
 .flex-center {
   @apply flex justify-center items-center;
 }
@@ -360,49 +558,11 @@ a {
 
   /* IE and Edge */
   scrollbar-width: none;
+
+  /* Firefox */
 }
 
-/* START: about us media queries */
-@media screen and (max-width: 1024px) {
-  .about-us {
-    @apply flex-col;
-  }
-  .about-us__image {
-    @apply flex-row;
-  }
-  .about-us__image-sushi3 {
-    @apply border-r-[color:var(--color-creamson)] border-r-8 border-b-[none] border-solid;
-  }
-  .about-us__button {
-    @apply hidden;
-  }
-}
-@media screen and (max-width: 750px) {
-  .about-us__image {
-    @apply flex-col;
-  }
-  .about-us__image-sushi3 {
-    @apply border-b-[color:var(--color-creamson)] border-r-[none] border-b-8 border-solid;
-  }
-  .about-us__button {
-    @apply block top-[47%];
-  }
-}
-@media screen and (max-width: 550px) {
-  .about-us__image-sushi2 img,
-  .about-us__image-sushi3 img {
-    @apply w-6/12 h-40 object-contain;
-  }
-  .about-us__image div {
-    @apply p-8;
-  }
-  .about-us__button {
-    @apply top-[44%];
-  }
-  .about-us__content {
-    @apply p-8;
-  }
-}
+
 
 /* END: about us media queries */
 
@@ -477,55 +637,34 @@ a {
 
 /* END: popular media queries */
 
-/* START: subscribe media queries */
-@media screen and (max-width: 550px) {
-  .subscription {
-    @apply px-8 py-16;
-  }
-  .subscription h2 {
-    @apply text-[68px] leading-[100px];
-  }
-  .subscription__form {
-    @apply flex-col gap-5 min-w-full p-0 rounded-[20px] border-[none];
-  }
-  .subscription__form input {
-    @apply min-h-[50px] border px-5 py-2.5 rounded-[30px] border-solid border-[rgba(255,255,255,0.5)];
-  }
-  .subscription__form button {
-    @apply min-w-full;
-  }
-}
 
-/* END: subscribe media queries */
 
-/* START: trending media queries */
-@media screen and (max-width: 1024px) {
-  .trending-sushi {
-    @apply flex-col;
-  }
-  .trending-drink {
-    @apply flex-col-reverse;
-  }
-  .trending__image {
-    @apply w-full bg-cover;
-  }
-  .trending__discover {
-    @apply hidden;
-  }
-  .trending__arrow {
-    @apply hidden;
-  }
-}
-@media screen and (max-width: 550px) {
-  .trending__image img {
-    @apply w-[70%] h-[70%];
-  }
-  .trending__content {
-    @apply p-8;
-  }
-}
+
 
 /* END: trending media queries */
 
 }
 
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
