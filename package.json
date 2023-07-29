@@ -12,6 +12,9 @@
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "@pothos/core": "^3.32.1",
+    "@pothos/plugin-prisma": "^3.53.0",
     "@prisma/client": "^5.0.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",
@@ -19,6 +22,8 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "graphql": "^16.7.1",
+    "graphql-yoga": "^4.0.3",
     "next": "13.4.7",
     "postcss": "^8.4.24",
     "react": "18.2.0",
