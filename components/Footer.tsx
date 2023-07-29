@@ -53,8 +53,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/oda-guzman/"
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-color font-500 ml-1 mr-1"
+            className="text-blue-600 font-500 ml-1 mr-1"
           >
             Oda
           </a>
