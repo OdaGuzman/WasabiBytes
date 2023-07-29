@@ -3,7 +3,11 @@
 
 generator client {
   provider = "prisma-client-js"
- }
+}
+
+generator pothos {
+  provider = "prisma-pothos-types"
+}
 
 datasource db {
   provider = "mysql"
@@ -22,12 +26,12 @@ model User {
 }
 
 model Item {
-  id                Int                 @id @default(autoincrement())
-  name              String
-  description       String              @db.VarChar(256)
-  price             Decimal             @default(0) @db.Decimal(10, 2)
-  imageSrc          String              @default("/")
-  category          String
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String  @db.VarChar(256)
+  price       Decimal @default(0)
+  imageSrc    String  @default("/")
+  category    String
 }
 
 model Order {
@@ -35,7 +39,7 @@ model Order {
   userId       Int
   restaurantId Int
   orderDate    DateTime
-  orderTotal   Decimal      @default(0) @db.Decimal(10, 2)
+  orderTotal   Int          @default(0)
   status       String
   items        OrderItems[]
 }
