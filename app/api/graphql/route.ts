@@ -1,19 +1,19 @@
-// app/api/graphql/route.ts
-
-
 import { createYoga } from 'graphql-yoga'
-import type { NextApiRequest, NextApiResponse } from 'next'
 import { schema } from '../../../graphql/schema'
+import { createContext } from '@/graphql/context'
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-
-const { handleRequest } = createYoga({
+const { handleRequest } = createYoga<{
+  req: NextApiRequest
+  res: NextApiResponse
+}>({
   schema,
 
-
-  // While using Next.js file convention for routing, we need to configure Yoga to use the correct endpoint
+  context: createContext,
   graphqlEndpoint: '/api/graphql',
-
 
   fetchAPI: { Response }
 })
+
+
 export { handleRequest as GET, handleRequest as POST }
