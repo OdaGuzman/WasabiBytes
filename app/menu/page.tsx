@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { gql, useQuery } from '@apollo/client'
-import type { Item } from '@prisma/client'
+
 // Define the prop types for the MenuItem component
 interface MenuItemProps {
   name: string;
@@ -11,7 +11,6 @@ interface MenuItemProps {
   price: number;
   imageUrl: string;
 }
-
 
 const AllItemsByCategory = gql`
 query itemsByCategory($category: String!) {
@@ -24,7 +23,6 @@ query itemsByCategory($category: String!) {
  }
 }
 `;
-
 
 const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, imageUrl }) => {
   return (
@@ -43,9 +41,6 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, imageUrl 
       </div>
     </div>
 
-
-
-
   );
 };
 const Page = async () => {
@@ -56,12 +51,7 @@ const Page = async () => {
 
   // const { data: ramenData} = await useQuery(AllItemsByCategory, { variables: { category: 'Ramen' } });
 
-
-
-
   return (
-
-
     <div>
       <Header />
 
@@ -128,9 +118,6 @@ const Page = async () => {
           TODO: THE SAME PERO CON “DESSERTS”
         </div>
       </div>
-
-
-
 
       <Footer />
     </div>
