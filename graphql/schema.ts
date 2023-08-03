@@ -1,4 +1,3 @@
-// graphql/schema.ts
 import "./types/Item";
 import { builder } from "./builder";
 

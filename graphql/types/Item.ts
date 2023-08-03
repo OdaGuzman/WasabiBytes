@@ -15,7 +15,6 @@ builder.prismaObject('Item', {
   })
 })
 
-
 // 1.
 builder.queryField("items", (t) =>
   // 2.
@@ -27,9 +26,6 @@ builder.queryField("items", (t) =>
       prisma.item.findMany({ ...query })
   })
 )
-
-
-
 
 builder.queryField("itemsByCategory", (t) =>
   t.prismaField({
