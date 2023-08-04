@@ -7,10 +7,7 @@ const Popular = () => {
       <h2 className="text-[56px] font-semibold leading-[78px] text-white text-center  font-playfair">Popular Dishes / 人気</h2>
 
       <div className="max-w-full overflow-x-auto flex justify-center gap-6 mt-12 hide-scrollbar ">
-        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta w-20 justify-center active:bg-white hover:bg-white">
-          All
-        </button>
-        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 active:bg-white hover:bg-white">
+        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 active:bg-creamson hover:bg-creamson">
           <Image
             src="/assets/sushi-9.png"
             alt="sushi"
@@ -20,7 +17,7 @@ const Popular = () => {
           />
           Sushi
         </button>
-        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 py-2 active:bg-white hover:bg-white">
+        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 py-2 active:bg-creamson hover:bg-creamson">
           <Image
             src="/assets/sushi-8.png"
             alt="ramen"
@@ -29,7 +26,7 @@ const Popular = () => {
             className="w-9 h-9 object-contain" />
           Ramen
         </button>
-        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 active:bg-white hover:bg-white">
+        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 active:bg-creamson hover:bg-creamson">
           <Image
             src="/assets/sake.png"
             alt="sake"
@@ -38,7 +35,7 @@ const Popular = () => {
             className="w-9 h-9 object-contain" />
           Beverages
         </button>
-        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 active:bg-white hover:bg-white">
+        <button className="flex flex-row items-center gap-2.5 border text-base font-[300px] leading-[25px] text-white rounded-[46px] border-solid border-[rgba(255,255,255,0.2)] hover:text-primary-color bg-opacity-5 bg-white font-jakarta justify-center px-5 active:bg-creamson hover:bg-creamson ">
           <Image
             src="/assets/desserts.png"
             alt="desserts"

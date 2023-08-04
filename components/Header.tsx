@@ -9,11 +9,11 @@ const Header = () => {
 
     <div className="flex overflow-hidden font-jakarta-600" >
       <div className="flex-1 relative p-5 bg-primary-color">
-        <h4 className="font-bold text-2xl uppercase text-white opacity-80">
+        <h3 className="text-secondary-color text-md lg:text-2xl font-600">
           <a href="/">
-            WASABI <span>B Y T E S  </span>
+            <span className="text-white">WASABI    </span> B Y T E S
           </a>
-        </h4>
+        </h3>
         <div className="absolute w-full z-[-1] inset-0;"></div>
       </div>
 
@@ -21,9 +21,7 @@ const Header = () => {
         <li>
           <Link href="/menu">Menu</Link>
         </li>
-        {/* <li>
-         <a href="../app/about/page.tsx">About</a>
-       </li> */}
+    
         <li className="cursor-pointer">
           <a href="/cart">
             <Image
