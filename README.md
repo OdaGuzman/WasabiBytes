@@ -1,8 +1,8 @@
-#🍣 Wasabi Bytes - Sushi Restaurant Website 🍱
+# 🍣 **Wasabi Bytes - Sushi Restaurant Website** 🍱
 
 This project, "Wasabi Bytes," is a sushi restaurant website built to showcase my skills in full-stack web development. It utilizes various technologies such as Next.js, Prisma, MySQL, GraphQL, GraphQL Yoga, TypeScript, Tailwind, and Auth0 to create a modern and interactive user experience.
 
-##🚀 Getting Started
+## 🚀 **Getting Started**
 
 To run this project locally, follow these steps:
 
@@ -41,11 +41,11 @@ pnpm dev
 
 You can now explore the website locally and make changes as needed. The page will auto-update whenever you modify the files in the app directory.
 
-##🎨 Font Optimization
+## 🎨 **Font Optimization**
 
 This project uses next/font to automatically optimize and load the Inter font, a custom Google Font, providing a clean and visually appealing typography.
 
-##🔗 Documentation
+## 🔗 **Documentation**
 
 To learn more about Next.js, consider checking out the following resources:
 
@@ -53,13 +53,13 @@ Next.js Documentation - This comprehensive documentation covers Next.js features
 Learn Next.js - An interactive Next.js tutorial to get you started with the framework.
 You can also contribute and provide feedback to the Next.js GitHub repository.
 
-##🚀 Deploy on Vercel
+## 🚀 **Deploy on Vercel**
 
 The easiest way to deploy your Next.js app is by using the Vercel Platform from the creators of Next.js. It provides a seamless and hassle-free deployment process.
 
 For more details on deploying a Next.js app, refer to our Next.js deployment documentation.
 
-##🛠 Tech Stack
+## 🛠 **Tech Stack**
 
 The stack used in this project includes:
 
@@ -75,6 +75,6 @@ The stack used in this project includes:
 
 Feel free to explore and modify the code to suit your needs and experiment with different features and functionalities
 
-##❤️ Support and Feedback
+## ❤️ **Support and Feedback**
 
 If you have any questions, suggestions, or issues, feel free to reach out via GitHub Issues. I appreciate your valuable feedback! :)
