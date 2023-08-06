@@ -7,24 +7,7 @@
   border: 2px solid rgba(255, 255, 290, 0.7); /* Replace with the desired border color and opacity */
   box-shadow: 0 0 17px rgba(255, 255, 290, 0.7); /* Replace with the desired shadow color and intensity */
 }
-/* styles.css */
-@keyframes sparkleAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 400% 0%;
-  }
-}
 
-/* Apply the sparkle effect with alternating colors */
-.sparkling-button {
-  /* Modify the linear gradient to change the colors */
-  background-image: linear-gradient(60deg, orange, purple, orange);
-  background-size: 400% 400%;
-  animation: sparkle 2s linear;
-
-},
 @layer components{
 .about-us {
   @apply flex min-h-[720px] overflow-hidden;

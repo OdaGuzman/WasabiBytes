@@ -28,6 +28,17 @@ const Header = () => {
             />
           </a>
         </li>
+        <li className="cursor-pointer">
+          <a href="/signup">
+            <Image
+              src="/assets/userhat.png"
+              alt="User Log In"
+              title="User Log In"
+              width={40}
+              height={40}
+            />
+          </a>
+        </li>
       </ul>
     </div >
 

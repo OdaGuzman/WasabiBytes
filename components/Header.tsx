@@ -1,10 +1,6 @@
-import { useUser } from '@auth0/nextjs-auth0/client'
 import Image from 'next/image'
 import Link from 'next/link'
-
 const Header = () => {
-
-  const { user } = useUser()
   return (
 
     <div className="flex overflow-hidden font-jakarta-600" >
@@ -21,7 +17,6 @@ const Header = () => {
         <li>
           <Link href="/menu">Menu</Link>
         </li>
-    
         <li className="cursor-pointer">
           <a href="/cart">
             <Image
@@ -33,28 +28,21 @@ const Header = () => {
             />
           </a>
         </li>
-        {user ?
-          <li>
-            <Link href="/api/auth/logout" >
-              <p>Logout</p>
-            </Link>
-          </li>
-          :
-          <li>
-            <Link href="/api/auth/login">
-              <Image
-                src="/assets/userhat.png"
-                alt="User Log In"
-                title="User Log In"
-                width={40}
-                height={40}
-              />
-            </Link>
-          </li>
-        }
-
+        <li className="cursor-pointer">
+          <a href="/signup">
+            <Image
+              src="/assets/userhat.png"
+              alt="User Log In"
+              title="User Log In"
+              width={40}
+              height={40}
+            />
+          </a>
+        </li>
       </ul>
     </div >
+
+
   )
 }
 

@@ -13,14 +13,14 @@ const Header = () => {
         <div className="absolute w-full z-[-1] inset-0;"></div>
       </div>
 
-      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-white text-base uppercase leading-5 bg-primary-color">
+      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-white text-base uppercase font-jakarta leading-5 bg-primary-color">
         <li>
           <Link href="/menu">Menu</Link>
         </li>
         <li className="cursor-pointer">
-          <a href="/cart">
+          <a href="/signup">
             <Image
-              src="/assets/cart3.png"
+              src="/assets/userhat.png"
               alt="User Log In"
               title="User Log In"
               width={40}
