@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Popular from "../components/Popular";
+import Subscribe from "../components/Subscribe"
 import Trending from "../components/Trending";
 import Loading from "../app/Loading"
 import React, { useEffect, useState } from 'react';
@@ -34,6 +35,7 @@ export default function Page(){
         <About />
         <Popular />
         <Trending />
+        <Subscribe />
         <Footer />
       </>
     )

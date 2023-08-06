@@ -108,7 +108,7 @@ const Trending = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex absolute z-[1] w-40 h-40 bg-secondary-color justify-center items-center rounded-[100%] left-[44%] top-[44%]">
+      <div className="hidden lg:flex absolute z-[1] w-40 h-40 bg-secondary-color cursor-pointer justify-center items-center rounded-[100%] left-[44%] top-[44%]">
         <p className="text-lg font-500 font-jakarta uppercase text-white">Discover</p>
       </div>
       <div className="w-full lg:min-h-[640px] flex flex-col lg:flex-row">
