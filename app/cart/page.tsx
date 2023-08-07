@@ -61,7 +61,6 @@ const MyForm: React.FC = () => {
   return (
     <>
       <Header />
-
       <div className="flex flex-col md:flex-row">
         <div className="grow">
 
@@ -234,7 +233,7 @@ const MyForm: React.FC = () => {
               </label>
             </h2>
 
-            {/* Conditionally show the form content based on the state of showForm */}
+            
             {showForm && (
               <div className="form-content">
                 <div className="mb-4 flex">
