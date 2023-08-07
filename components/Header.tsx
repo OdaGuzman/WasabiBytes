@@ -21,8 +21,8 @@ const Header = () => {
           <a href="/cart">
             <Image
               src="/assets/cart3.png"
-              alt="User Log In"
-              title="User Log In"
+              alt="Cart"
+              title="Cart"
               width={40}
               height={40}
             />
