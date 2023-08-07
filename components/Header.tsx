@@ -21,8 +21,13 @@ const Header = () => {
           <a href="/cart">
             <Image
               src="/assets/cart3.png"
+<<<<<<< HEAD
               alt="Cart"
               title="Cart"
+=======
+              alt="User Log In"
+              title="User Log In"
+>>>>>>> 4ce42cbd61598fd443f3e2c5d6d523f72e1b1f50
               width={40}
               height={40}
             />
