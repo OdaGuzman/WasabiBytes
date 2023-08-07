@@ -13,25 +13,9 @@ const Header = () => {
         <div className="absolute w-full z-[-1] inset-0;"></div>
       </div>
 
-      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-secondary-color text-base uppercase leading-5">
+      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-white text-base uppercase font-jakarta leading-5 bg-primary-color">
         <li>
           <Link href="/menu">Menu</Link>
-        </li>
-        <li className="cursor-pointer">
-          <a href="/cart">
-            <Image
-              src="/assets/cart3.png"
-<<<<<<< HEAD
-              alt="Cart"
-              title="Cart"
-=======
-              alt="User Log In"
-              title="User Log In"
->>>>>>> 4ce42cbd61598fd443f3e2c5d6d523f72e1b1f50
-              width={40}
-              height={40}
-            />
-          </a>
         </li>
         <li className="cursor-pointer">
           <a href="/signup">

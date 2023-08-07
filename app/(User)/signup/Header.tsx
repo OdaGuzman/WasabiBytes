@@ -1,28 +1,34 @@
+import Image from 'next/image'
+import Link from 'next/link'
 const Header = () => {
   return (
 
     <div className="flex overflow-hidden font-jakarta-600" >
       <div className="flex-1 relative p-5 bg-primary-color">
-        <h4 className="font-bold text-2xl uppercase text-white opacity-80">
+        <h3 className="text-secondary-color text-md lg:text-2xl font-600">
           <a href="/">
-            WASABI <span>B Y T E S  </span>
+            <span className="text-white">WASABI    </span> B Y T E S
           </a>
-        </h4>
-        <div className="absolute w-full z-[-1] inset-0"></div>
+        </h3>
+        <div className="absolute w-full z-[-1] inset-0;"></div>
       </div>
 
-
-      {/* <ul className="flex-[1.236] bg-primary-color flex items-center justify-end p-5 text-secondary-color ">
+      <ul className="flex-[1.236] flex items-center justify-end gap-8 p-5 list-none font-medium text-white text-base uppercase leading-5 bg-primary-color">
         <li>
-        <Image
-          src="/assets/userhat.png"
-          alt="User Log In"
-          title="User Log In"
-          width={40}
-          height={40}
-        />
-      </li>
-    </ul> */}
+          <Link href="/menu">Menu</Link>
+        </li>
+        <li className="cursor-pointer">
+          <a href="/cart">
+            <Image
+              src="/assets/cart3.png"
+              alt="User Log In"
+              title="User Log In"
+              width={40}
+              height={40}
+            />
+          </a>
+        </li>
+      </ul>
     </div >
 
 
